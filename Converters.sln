@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSqlConverter", "NoSqlConverter\NoSqlConverter.csproj", "{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{49A7109C-7DFE-4E71-A2EC-49D810C6D8C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Converters", "Converters", "{F241F138-53EC-4EFE-8D3B-C2599556082A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applicaitons", "Applicaitons", "{CED4ACB5-FDAE-4123-AF42-654CACCC2B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Common.DependecyInjection", "Converters.Common.DependecyInjection\Converters.Common.DependecyInjection.csproj", "{3CA83634-0077-4359-8D5A-C85EB2D5B318}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{51757C1C-ECBE-4F75-83D9-4B6B86A5D723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.DI.Test", "Converters.DI.Test\Converters.DI.Test.csproj", "{C1D84A95-D786-4D0C-BB3F-1B3903B0D253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.NoSqlConverter.Tests", "Converters.NoSqlConverter.Tests\Converters.NoSqlConverter.Tests.csproj", "{90CFE2FD-B57D-4356-AE74-08475DBEB328}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{5D566008-F782-43C6-B661-98EEB9CCEBCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformationProvider", "InformationProvider\InformationProvider.csproj", "{7880626F-E928-4D3F-AFF7-5AD0FA62C728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Connections", "Connections", "{4045FB04-CDF3-4BA1-A084-35512E7EA717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Connections.Sql", "Converters.Connections.Sql\Converters.Connections.Sql.csproj", "{D7E1DE4F-4ABD-4BBA-B05F-46780B640180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Common.Sql", "Converters.Common.Sql\Converters.Common.Sql.csproj", "{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Common.Sql.Tests", "Converters.Common.Sql.Tests\Converters.Common.Sql.Tests.csproj", "{6D9128DA-607A-4EA0-B626-E923893B00AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA83634-0077-4359-8D5A-C85EB2D5B318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA83634-0077-4359-8D5A-C85EB2D5B318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA83634-0077-4359-8D5A-C85EB2D5B318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA83634-0077-4359-8D5A-C85EB2D5B318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D84A95-D786-4D0C-BB3F-1B3903B0D253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D84A95-D786-4D0C-BB3F-1B3903B0D253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D84A95-D786-4D0C-BB3F-1B3903B0D253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D84A95-D786-4D0C-BB3F-1B3903B0D253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CFE2FD-B57D-4356-AE74-08475DBEB328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CFE2FD-B57D-4356-AE74-08475DBEB328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CFE2FD-B57D-4356-AE74-08475DBEB328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CFE2FD-B57D-4356-AE74-08475DBEB328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7880626F-E928-4D3F-AFF7-5AD0FA62C728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7880626F-E928-4D3F-AFF7-5AD0FA62C728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7880626F-E928-4D3F-AFF7-5AD0FA62C728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7880626F-E928-4D3F-AFF7-5AD0FA62C728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC9E2C65-9A77-4632-BD13-D6EF859B0B46} = {F241F138-53EC-4EFE-8D3B-C2599556082A}
+		{3CA83634-0077-4359-8D5A-C85EB2D5B318} = {49A7109C-7DFE-4E71-A2EC-49D810C6D8C6}
+		{C1D84A95-D786-4D0C-BB3F-1B3903B0D253} = {51757C1C-ECBE-4F75-83D9-4B6B86A5D723}
+		{90CFE2FD-B57D-4356-AE74-08475DBEB328} = {51757C1C-ECBE-4F75-83D9-4B6B86A5D723}
+		{7880626F-E928-4D3F-AFF7-5AD0FA62C728} = {5D566008-F782-43C6-B661-98EEB9CCEBCE}
+		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180} = {4045FB04-CDF3-4BA1-A084-35512E7EA717}
+		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC} = {49A7109C-7DFE-4E71-A2EC-49D810C6D8C6}
+		{6D9128DA-607A-4EA0-B626-E923893B00AF} = {51757C1C-ECBE-4F75-83D9-4B6B86A5D723}
+	EndGlobalSection
+EndGlobal
