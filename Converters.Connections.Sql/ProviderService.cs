@@ -14,6 +14,11 @@ namespace Converters.Connections.Sql
 
         }
 
+        public ProviderService(string connectionStr) : base(connectionStr)
+        {
+
+        }
+
         /// <summary>
         /// Gets the databases.
         /// </summary>
@@ -25,9 +30,25 @@ namespace Converters.Connections.Sql
 
             ICollection<string> dbs = new List<string>();
 
-            string command          = "sp_databases";
-            var datatable           = Execute(connection, command);
-            dbs                     = FillCollection(datatable.Rows, "DATABASE_NAME");
+            string command = "sp_databases";
+            var datatable  = Execute(connection, command);
+            dbs            = FillCollection(datatable.Rows, "DATABASE_NAME");
+            
+            return dbs;
+        }
+
+        /// <summary>
+        /// Gets the databases.
+        /// </summary>
+        /// <returns></returns>
+        public ICollection<string> GetDatabases()
+        {
+
+            ICollection<string> dbs = new List<string>();
+
+            string command = "sp_databases";
+            var datatable  = Execute(ConnectionString, command);
+            dbs            = FillCollection(datatable.Rows, "DATABASE_NAME");
             
             return dbs;
         }
@@ -42,9 +63,24 @@ namespace Converters.Connections.Sql
         {
             ICollection<string> dbs = new List<string>();
             
-            string command          = "SELECT table_name as TABLE_NAME FROM INFORMATION_SCHEMA.Tables WHERE TABLE_TYPE = 'BASE TABLE'";
-            var datatable           = Execute(connection, command);
-            dbs                     = FillCollection(datatable.Rows, "TABLE_NAME");
+            string command = "SELECT table_name as TABLE_NAME FROM INFORMATION_SCHEMA.Tables WHERE TABLE_TYPE = 'BASE TABLE'";
+            var datatable  = Execute(connection, command);
+            dbs            = FillCollection(datatable.Rows, "TABLE_NAME");
+
+            return dbs;
+        }
+
+        /// <summary>
+        /// Gets the table list.
+        /// </summary>
+        /// <returns></returns>
+        public ICollection<string> GetTableList()
+        {
+            ICollection<string> dbs = new List<string>();
+            
+            string command = "SELECT table_name as TABLE_NAME FROM INFORMATION_SCHEMA.Tables WHERE TABLE_TYPE = 'BASE TABLE'";
+            var datatable  = Execute(base.ConnectionString, command);
+            dbs            = FillCollection(datatable.Rows, "TABLE_NAME");
 
             return dbs;
         }

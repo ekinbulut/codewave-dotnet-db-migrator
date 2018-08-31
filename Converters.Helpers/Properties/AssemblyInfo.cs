@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Converters.NoSqlConverter")]
+[assembly: AssemblyTitle("Converters.Helpers")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Converters.NoSqlConverter")]
+[assembly: AssemblyProduct("Converters.Helpers")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("fc9e2c65-9a77-4632-bd13-d6ef859b0b46")]
+[assembly: Guid("aae39aa0-57f7-4dc1-aaf8-f5e5b8bcec87")]
 
 // Version information for an assembly consists of the following four values:
 //

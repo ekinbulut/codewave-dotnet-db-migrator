@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
 
-namespace NoSqlConverter
+namespace Converters.NoSqlConverter
 {
     public class ComponentInstaller : CommonInstaller
     {

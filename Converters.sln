@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoSqlConverter", "NoSqlConverter\NoSqlConverter.csproj", "{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.NoSqlConverter", "NoSqlConverter\Converters.NoSqlConverter.csproj", "{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{49A7109C-7DFE-4E71-A2EC-49D810C6D8C6}"
 EndProject
@@ -30,6 +30,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Common.Sql", "Converters.Common.Sql\Converters.Common.Sql.csproj", "{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Common.Sql.Tests", "Converters.Common.Sql.Tests\Converters.Common.Sql.Tests.csproj", "{6D9128DA-607A-4EA0-B626-E923893B00AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Helpers", "Converters.Helpers\Converters.Helpers.csproj", "{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converters.Helpers.Tests", "Converters.Helpers.Tests\Converters.Helpers.Tests.csproj", "{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D9128DA-607A-4EA0-B626-E923893B00AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +94,7 @@ Global
 		{D7E1DE4F-4ABD-4BBA-B05F-46780B640180} = {4045FB04-CDF3-4BA1-A084-35512E7EA717}
 		{B5F7A886-CB20-49A9-90F1-CAD2FBDA55EC} = {49A7109C-7DFE-4E71-A2EC-49D810C6D8C6}
 		{6D9128DA-607A-4EA0-B626-E923893B00AF} = {51757C1C-ECBE-4F75-83D9-4B6B86A5D723}
+		{AAE39AA0-57F7-4DC1-AAF8-F5E5B8BCEC87} = {5D566008-F782-43C6-B661-98EEB9CCEBCE}
+		{6AE3A995-EA6F-4C36-A68B-CCB2ADD57254} = {51757C1C-ECBE-4F75-83D9-4B6B86A5D723}
 	EndGlobalSection
 EndGlobal

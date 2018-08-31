@@ -7,8 +7,8 @@
     <ProjectGuid>{FC9E2C65-9A77-4632-BD13-D6EF859B0B46}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NoSqlConverter</RootNamespace>
-    <AssemblyName>NoSqlConverter</AssemblyName>
+    <RootNamespace>Converters.NoSqlConverter</RootNamespace>
+    <AssemblyName>Converters.NoSqlConverter</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

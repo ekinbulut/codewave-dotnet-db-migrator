@@ -11,6 +11,10 @@ namespace Converters.Connections.Sql.Contracts
     {
         ICollection<string> GetDatabases(string connection);
 
+        ICollection<string> GetDatabases();
+
         ICollection<string> GetTableList(string connection);
+
+        ICollection<string> GetTableList();
     }
 }
