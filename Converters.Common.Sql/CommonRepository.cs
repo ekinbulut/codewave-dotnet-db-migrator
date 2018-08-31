@@ -50,7 +50,7 @@ namespace Converters.Common.Sql
         /// </summary>
         /// <param name="command">The command.</param>
         /// <returns></returns>
-/        public virtual DataTable Execute(string command)
+        public virtual DataTable Execute(string command)
         {
             DataTable result = new DataTable();
 
