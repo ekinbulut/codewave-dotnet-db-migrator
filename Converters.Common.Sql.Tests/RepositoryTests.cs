@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Data;
+using System.Data.Sql;
+using System.ServiceProcess;
 
 namespace Converters.Common.Sql.Tests
 {
@@ -39,6 +41,33 @@ namespace Converters.Common.Sql.Tests
 
             Assert.IsNotNull(datatable);
 
+        }
+
+        [TestMethod]
+        public void GetInstancesOfSQL()
+        {
+
+            ServiceController myService = new ServiceController();
+            myService.ServiceName = "SQLBrowser";
+
+            myService.MachineName = "localhost";
+            string svcStatus = myService.Status.ToString();
+
+            switch (svcStatus)
+            {
+                case "Stopped":
+                    myService.Start();
+                    break;
+
+                default:
+                    break;
+            }
+
+
+
+            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
+            DataTable table = instance.GetDataSources();
+            //DisplayData(table);
         }
     }
 
