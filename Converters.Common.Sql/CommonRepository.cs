@@ -5,18 +5,18 @@ namespace Converters.Common.Sql
 {
     public abstract class CommonRepository : ICommonRepository
     {
-        protected string ConnectionString;
+        protected readonly string ConnectionString;
 
-        protected SqlConnectionProvider provider;
+        protected readonly SqlConnectionProvider Provider;
 
         public CommonRepository()
         {
-            provider = new SqlConnectionProvider();
+            Provider = new SqlConnectionProvider();
         }
 
         public CommonRepository(string connectionString)
         {
-            provider = new SqlConnectionProvider();
+            Provider = new SqlConnectionProvider();
             ConnectionString = connectionString;
         }
 
@@ -30,12 +30,14 @@ namespace Converters.Common.Sql
         {
             DataTable result = new DataTable();
 
-            provider.GetSqlConnectionInstance.ConnectionString = connection;
+            Provider.GetSqlConnectionInstance.ConnectionString = connection;
 
-            SqlCommand executionCommand  = new SqlCommand();
-            executionCommand.Connection  = provider.GetSqlConnectionInstance;
-            executionCommand.CommandType = System.Data.CommandType.Text;
-            executionCommand.CommandText = command;
+            SqlCommand executionCommand = new SqlCommand
+            {
+                Connection = Provider.GetSqlConnectionInstance,
+                CommandType = CommandType.Text,
+                CommandText = command
+            };
 
             SqlDataAdapter adp = new SqlDataAdapter(executionCommand);
 
@@ -54,12 +56,14 @@ namespace Converters.Common.Sql
         {
             DataTable result = new DataTable();
 
-            provider.GetSqlConnectionInstance.ConnectionString = ConnectionString;
+            Provider.GetSqlConnectionInstance.ConnectionString = ConnectionString;
 
-            SqlCommand executionCommand  = new SqlCommand();
-            executionCommand.Connection  = provider.GetSqlConnectionInstance;
-            executionCommand.CommandType = System.Data.CommandType.Text;
-            executionCommand.CommandText = command;
+            SqlCommand executionCommand = new SqlCommand
+            {
+                Connection = Provider.GetSqlConnectionInstance,
+                CommandType = CommandType.Text,
+                CommandText = command
+            };
 
             SqlDataAdapter adp = new SqlDataAdapter(executionCommand);
 

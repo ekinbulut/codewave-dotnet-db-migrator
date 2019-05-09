@@ -92,7 +92,7 @@ namespace Converters.Connections.Sql
         /// <param name="rows">The rows.</param>
         /// <param name="columnName">Name of the column.</param>
         /// <returns></returns>
-        private ICollection<string> FillCollection(DataRowCollection rows, string columnName)
+        private static ICollection<string> FillCollection(DataRowCollection rows, string columnName)
         {
             ICollection<string> dbs = new List<string>();
 
