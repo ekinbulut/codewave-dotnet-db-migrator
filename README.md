@@ -1,6 +1,6 @@
 # Two way NoSql to Sql Converter
 
-## Purpose :
+## Purpose
 * Convert and transfer any data from sql to nosql 
 * Convert and transfer any data from nosql to sql
 
